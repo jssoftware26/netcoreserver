@@ -157,8 +157,8 @@ export const loginaccount = async(req, res)=>{
         //Set refresh token cookie
         res.cookie("refreshToken", refreshToken, {
             httpOnly: true,
-            secure: false,    //true in production (HTTPS)
-            sameSite: "lax",
+            secure: true,    //true in production (HTTPS)
+            sameSite: "none",
             maxAge: 60 * 24 * 60 * 60 * 1000
         });
 
