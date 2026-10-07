@@ -4,7 +4,8 @@
   "description": "server for netcoreservice website",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon netcoreserver.js"
+    "dev": "nodemon netcoreserver.js",
+    "start": "node netcoreserver.js"
   },
   "keywords": [],
   "author": "Ye Lin Naing",
